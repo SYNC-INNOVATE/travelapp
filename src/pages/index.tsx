@@ -16,6 +16,8 @@ export default function Home() {
     initWeb5();
   }, []);
 
+  console.log(myDid)
+
 
   return (
     <main
