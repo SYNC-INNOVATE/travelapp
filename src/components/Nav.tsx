@@ -2,10 +2,10 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div className='flex items-center justify-center'>
-      <nav className="flex justify-between w-10/12 mt-6">
+    <div className="flex items-center justify-center w-10/12 mt-6">
+      <nav className="flex justify-between items-center  w-full">
         <div>TravelAdvisors</div>
-        <div className="w-3/6 bg-slate-600">
+        <div className="w-3/6 ">
           <ul className=" flex justify-between ">
             <li>Home</li>
             <li>Discover</li>

@@ -17,15 +17,44 @@ export default function Home() {
     initWeb5();
   }, []);
 
-  console.log(myDid)
+  // console.log(myDid)
 
 
   return (
-    <>
-    <Nav></Nav> 
-     <div>
-      
-     </div>
-    </>
-  )
+    <div className="bg-green-300 flex flex-col items-center ">
+      <Nav></Nav>
+      <section className="bg-red-400 w-3/6 flex flex-col items-center justify-center mt-10">
+        <p>Discover</p>
+        <p>
+          Discover our sales world. We love travel, whats happening to travel
+          and how we travel
+        </p>
+      </section>
+      <section className="w-10/12 bg-red-600 px-6">
+        <p>Where do you want to discover ?</p>
+        <section className="flex justify-between">
+          <div className="flex flex-col">
+            <label htmlFor="">From-To</label>
+            <input type="text" />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="">Trip</label>
+            <input type="text" />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="">Depart-Return</label>
+            <input type="text" />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="">Hotel</label>
+            <input type="text" />
+          </div>
+        </section>
+        <div>
+          <button>Add Promo code</button>
+          <button className="bg-green-500">Show Place</button>
+        </div>
+      </section>
+    </div>
+  );
 }
