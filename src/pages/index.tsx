@@ -21,38 +21,58 @@ export default function Home() {
 
 
   return (
-    <div className="bg-green-300 flex flex-col items-center ">
+    <div className=" flex flex-col items-center">
       <Nav></Nav>
-      <section className="bg-red-400 w-3/6 flex flex-col items-center justify-center mt-10">
-        <p>Discover</p>
+      <section className=" w-3/6 flex flex-col items-center justify-center mt-10">
+        <p className="text-4xl">Discover</p>
         <p>
           Discover our sales world. We love travel, whats happening to travel
           and how we travel
         </p>
       </section>
-      <section className="w-10/12 bg-red-600 px-6">
-        <p>Where do you want to discover ?</p>
-        <section className="flex justify-between">
-          <div className="flex flex-col">
+      <section className="w-10/12 p-6 bg-gray-300 rounded-lg mt-10">
+        <p className="mb-6">Where do you want to discover ?</p>
+        <section className="flex justify-between mb-6">
+          <div className="flex flex-col w-1/4">
             <label htmlFor="">From-To</label>
-            <input type="text" />
+            <input
+              type="text"
+              className="h-12 rounded-lg border-white border-2 bg-transparent px-4"
+              placeholder="dubia - tokyo"
+            />
           </div>
           <div className="flex flex-col">
             <label htmlFor="">Trip</label>
-            <input type="text" />
+            <input
+              type="text"
+              className="h-12 rounded-lg border-white border-2 bg-transparent px-4"
+              placeholder="Return"
+            />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col bg-red-300 w-1/4">
             <label htmlFor="">Depart-Return</label>
-            <input type="text" />
+            <input
+              type="text"
+              className="h-12 rounded-lg border-white border-2 bg-transparent px-4"
+              placeholder="Depart date - return date"
+            />
           </div>
           <div className="flex flex-col">
             <label htmlFor="">Hotel</label>
-            <input type="text" />
+            <input
+              type="text"
+              className="h-12 rounded-lg border-white border-2 bg-transparent px-4"
+              placeholder="4 bed room"
+            />
           </div>
         </section>
-        <div>
-          <button>Add Promo code</button>
-          <button className="bg-green-500">Show Place</button>
+        <div className="flex gap-4">
+          <button className="border-2 border-white p-5 h-12 flex items-center rounded-lg">
+            Add Promo code
+          </button>
+          <button className="bg-green-500 p-5 h-12 flex items-center rounded-lg">
+            Show Place
+          </button>
         </div>
       </section>
     </div>
