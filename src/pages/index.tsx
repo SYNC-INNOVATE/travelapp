@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Web5 } from '@web5/api';
+import Nav from "@/components/Nav";
 
 
 export default function Home() {
@@ -20,9 +21,11 @@ export default function Home() {
 
 
   return (
-    <main
-    >
+    <>
+    <Nav></Nav> 
+     <div>
       
-    </main>
+     </div>
+    </>
   )
 }
