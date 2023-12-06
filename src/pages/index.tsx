@@ -49,7 +49,7 @@ export default function Home() {
               placeholder="Return"
             />
           </div>
-          <div className="flex flex-col bg-red-300 w-1/4">
+          <div className="flex flex-col  w-1/4">
             <label htmlFor="">Depart-Return</label>
             <input
               type="text"
